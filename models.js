@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const Docente = mongoose.model('docentes', {
+const Docente = mongoose.model('Docente', {
     profesor: String
 });
 
-const Ausencias = mongoose.model('ausencias', {
+const Ausencia = mongoose.model('Ausencia', {
     fecha: Date,
     hora: String,
     nombre: String,
@@ -13,5 +13,5 @@ const Ausencias = mongoose.model('ausencias', {
 
 module.exports = {
     Docente,
-    Ausencias
+    Ausencia
 };
